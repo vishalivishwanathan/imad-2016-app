@@ -1,0 +1,233 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shopping+</title>
+    <link rel="shortcut icon" href="../favicon.ico" />
+
+
+    <!--Font Links-->
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans|Yanone+Kaffeesatz|Open+Sans+Condensed:300" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="../Styles/bootstrap.css">
+    <link rel="stylesheet" href="../Styles/site.css">
+    <link rel="stylesheet" href="../Styles/ALMenu.css">
+    <link rel="stylesheet" href="../Styles/imageslides.css">
+    <link rel="stylesheet" href="../Styles/Products.css">
+
+
+
+    <script src="../Scripts/jquery-1.10.2.js"></script>
+    <script src="../Scripts/bootstrap.js"></script>
+    <script src="../Scripts/ALMenu.js"></script>
+    <script src="../Scripts/ImageSlideShow.js"></script>
+    <script src="../Scripts/View.js"></script>
+</head>
+
+
+
+<body id="Home" data-spy="scroll" data-target=".navbar" data-offset="60">
+    <!--Slide Show-->
+    <div class="slides-holder slide-show page row" id="TopSlideShow">
+        <a href="HolidaySpecial.html"><div class="AmyGrant ImageSlides-Slide slide-hide page col-sm-12"></div></a>
+        <a>
+            <div class="ImageSlides-Slide slide-hide page col-sm-12">
+                <div class="row text-center">
+                    <h1 style="color: #FF0000;">Holiday Movies</h1>
+                </div>
+                <div class="col-sm-6 PolarExpress threefourthpage"></div>
+                <div class="col-sm-6 HomeAlone threefourthpage"></div>
+            </div>
+        </a>
+        <a><div class="christmas-is-here ImageSlides-Slide slide-hide page"></div></a>
+    </div>
+    <script>
+            $(document).ready(function () {
+                var topslide = new SlideShows.slideShow($(".ImageSlides-Slide"), 3000);
+                $(document).scrollStopped(function () {
+                    if (!$("#TopSlideShow").isInView()) {
+                        topslide.pause();
+                    }
+                    else {
+                        if (!topslide.isPlaying && $("#TopSlideShow").isInView()) {
+                            topslide.play();
+                        }
+                    }
+                });
+            });
+    </script>
+
+
+    <nav class="navbar navbar-default" id="Menu">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" style="padding:5px;" href="#Home">
+                <section class="logo">
+                    <span id="ShoppingPlus"></span>
+                </section>
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#Shops"><i class="glyphicon glyphicon-home"></i> Shops</a></li>
+                <li><a href="#Fashion"><i class="glyphicon glyphicon-gift"></i>Fashion</a></li>
+                <li><a href="#reg"><i class="glyphicon glyphicon-shopping-cart"></i> Cart</a></li>
+                <li></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="body-content container-fluid">
+        <div class="page" id="Shops">
+            <h2>Holiday Spcial</h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="header">
+                            <h2 class="text">Tenesse Christmas</h2>
+                        </div>
+                        <div class="body">
+                            <img src="../Images/Adds/AmyGrant.png" class="img" />
+                        </div>
+                        <div class="footer">
+                            <div class="text">
+                                <i class="glyphicon glyphicon-shopping-cart"></i> $12
+                                <a href="ComingSoon.html" class="btn btn-primary pull-right">Buy</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="header">
+                            <h2 class="text">A Christmas Carol</h2>
+                        </div>
+                        <div class="body">
+                            <img src="../Images/a-christmas-carol.jpg" class="img" />
+                        </div>
+                        <div class="footer">
+                            <div class="text">
+                                <i class="glyphicon glyphicon-shopping-cart"></i> $12
+                                <a href="ComingSoon.html" class="btn btn-primary pull-right">Buy</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="header">
+                            <h2 class="text">Polar Express</h2>
+                        </div>
+                        <div class="body">
+                            <img src="../Images/PE.jpg" class="img" />
+                        </div>
+                        <div class="footer">
+                            <div class="text">
+                                <i class="glyphicon glyphicon-shopping-cart"></i> $12
+                                <a href="ComingSoon.html" class="btn btn-primary pull-right">Buy</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="header">
+                            <h2 class="text">Home Alone</h2>
+                        </div>
+                        <div class="body">
+                            <img src="../Images/HomeAlone.jpg" class="img" />
+                        </div>
+                        <div class="footer">
+                            <div class="text">
+                                <i class="glyphicon glyphicon-shopping-cart"></i> $12
+                                <a href="ComingSoon.html" class="btn btn-primary pull-right">Buy</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="clearfix"></div>
+            </div>
+            <div class="row text-center">
+                <ul class="pagination">
+                    <li class="active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">>></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container-fluid">
+        <p>
+            &copy; This is a just a project, Do not copy without permission
+            <br />
+            Contact <a href="tel:+919962139874">Theme Dealer</a>
+        </p>
+    </footer>
+
+
+    <!--Scripts-->
+    <script type="text/javascript" src="/ui/main.js"></script>
+    <script>
+            $(document).ready(function(){
+                $(".page").css("min-height", (window.innerHeight - 50).toString() + "px");
+                $(".threefourthpage").css("min-height", window.innerHeight * 70 / 100);
+
+                $(window).resize(function () {
+                    $(".page").css("min-height", (window.innerHeight - 50).toString() + "px");
+                    $(".threefourthpage").css("min-height", window.innerHeight * 70 / 100);
+                });
+
+                $(".navbar a, nav a").click(function () {
+
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top - 50
+                    }, 700, function () {
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                    $(this).parent().siblings().removeClass("active");
+                    $(this).parent().addClass("active");
+                });
+
+                ImageSlides.slideShow("TopSlideShow", "ImageSlides-Slide");
+            });
+                var fixed = $("#Menu").hasClass("navbar-fixed-top");
+                $(document).scroll(function () {
+                    if ($("#TopSlideShow").isOutOfView()) {
+
+                        if (fixed) { return; }
+
+                        $("#Menu").addClass("navbar-fixed-top");
+                        $(".body-content").children().css("margin-top", "50px");
+                        fixed = !fixed;
+                    }
+                    else {
+
+                        if (!fixed) { return; }
+
+                        $("#Menu").removeClass("navbar-fixed-top");
+                        $(".body-content").children().css("margin-top", "0px");
+                        fixed = !fixed;
+                    }
+
+                    return;
+
+                });
+    </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+.ALmenu-container{
+min-width: 250px;
+max-width: 250px;
+position: absolute;
+display: none;
+box-shadow: 0px 1px 3px ThreeDShadow;
+z-index: 2000;
+}
+
+.ALmenu-item{
+	padding: 10px;
+	padding-left: 23px;
+	cursor: pointer;
+}
+
+
+.ALmenu-item:hover{
+	background-color: #0099ff;
+	color: #ffffff;
+}
